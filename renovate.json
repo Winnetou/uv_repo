@@ -9,9 +9,7 @@
     "onboarding": false,
     "requireConfig": "optional",
     "branchPrefix": "renovate-py/",
-    "poetry": {
-    "enabled": true
-  },
+     
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": [
@@ -21,7 +19,7 @@
   "packageRules": [
     {
       "matchManagers": [
-        "poetry"
+        "pep621"
       ],
       "rangeStrategy": "bump"
     },
