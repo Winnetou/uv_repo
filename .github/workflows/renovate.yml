@@ -3,7 +3,7 @@ name: Renovate
 on:
   schedule:
     # Runs every 35 mins
-    - cron: "48 * * * *"
+    - cron: "59 * * * *"
   workflow_dispatch: {} # allows manual triggering from the Actions tab
 
 jobs:
