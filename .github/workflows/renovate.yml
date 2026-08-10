@@ -1,0 +1,20 @@
+name: Renovate
+
+on:
+  schedule:
+    # Runs every 35 mins
+    - cron: "59 * * * *"
+  workflow_dispatch: {} # allows manual triggering from the Actions tab
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.3
+
+      - name: Self-hosted Renovate
+        uses: renovatebot/github-action@v46.1.15
+        with:
+          configurationFile: renovate.json
+          token: ${{ secrets.RENOVATE_TOKEN }}
