@@ -156,6 +156,7 @@ dependencies = [
     "plotly>=6.9.0,<7.0.0",
     "pluggy>=1.5.0",
     "polars>=1.43.2,<2.0.0",
+    "portant-mailing>=1.0.8",
     "prek>=0.4.10",
     "prometheus-client>=0.26.0,<0.27.0",
     "protobuf>=7.35.1,<8.0.0",
