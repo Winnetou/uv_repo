@@ -10,7 +10,7 @@ updates:
      - "/"
     schedule:
       interval: "cron"
-      cronjob: "1 * * * *"
+      cronjob: "19 * * * *"
     groups:
       python-dependencies:
         patterns:
